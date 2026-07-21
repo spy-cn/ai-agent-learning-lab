@@ -63,7 +63,7 @@ def run_milvus_demo():
     """
     print("\n=== 1. Milvus（嵌入式模式）===")
 
-    db_path = "./milvus_demo.db"
+    db_path = "data/embedding/milvus_demo.db"
 
     # 2. 初始化 Client
     client = MilvusClient(uri=db_path)
@@ -185,7 +185,7 @@ def run_chroma_demo():
     """
     print("\n=== 2.2 Chroma（持久化）===")
 
-    persist_dir = "./chroma_db"
+    persist_dir = "data/embedding/chroma_db"
 
     vectorstore = Chroma.from_texts(
         texts=texts,
@@ -224,7 +224,7 @@ def run_qdrant_demo():
     from qdrant_client import QdrantClient
     from qdrant_client.http.models import Distance, PointStruct, VectorParams
 
-    client = QdrantClient(path="./qdrant_db")
+    client = QdrantClient(path="data/embedding/qdrant_db")
     collection_name = "demo_collection"
 
     # 重建 Collection

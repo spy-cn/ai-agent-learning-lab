@@ -1,6 +1,7 @@
 .idea
 *.iml
 models
+embedding/
 data/video
 temp_videos
 # Byte-compiled / optimized / DLL files
