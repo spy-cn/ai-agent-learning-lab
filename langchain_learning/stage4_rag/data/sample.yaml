@@ -1,6 +1,4 @@
-
-        app:
-          name: LLM-App
-          version: 1.0
-        description: 这是一个基于 LangChain 的文档处理程序
-        
+app:
+  name: LLM-App
+  version: 1.0
+description: 这是一个基于 LangChain 的文档处理程序
