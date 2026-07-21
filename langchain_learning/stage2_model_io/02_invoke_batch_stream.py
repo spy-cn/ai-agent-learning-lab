@@ -3,7 +3,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 import time
 import asyncio
 
-MODEL_NAME = "kimi-k2.6"
+MODEL_NAME = "deepseek-v4-flash"
 MODEL_URL = "https://llm-lniax9q66senyb7s.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
 MODEL_KEY = "sk-ws-H.EHHMLPX.GItO.MEUCIQDOAzCACqmt9lyJ1RrfpNRVVu9sgD9QAZRJo8cXtUKE1wIgbdfCUdVgwKvGPDb-wwa8-lj4kGXtiTJHjTLnNwUniZg"
 
@@ -21,7 +21,7 @@ def init_model():
 def print_stream():
     llm = init_model()
     print("=== stream 流式输出 ===")
-    for chunk in llm.stream("写一句话介绍 Python"):
+    for chunk in llm.stream("请证明量子理论"):
         print(chunk.content, end="", flush=True)
     print("\n")
 
@@ -83,4 +83,4 @@ def print_langchain_batch():
     print(f"LangChain Batch 3 次：{time.time() - start:.2f}s")
 
 if __name__ == "__main__":
-    print_sync_invoke()
+    print_stream()

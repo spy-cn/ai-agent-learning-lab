@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MODEL_NAME = "kimi-k2.6"
+MODEL_NAME = "deepseek-v4-flash"
 MODEL_URL = "https://llm-lniax9q66senyb7s.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
 MODEL_KEY = "sk-ws-H.EHHMLPX.GItO.MEUCIQDOAzCACqmt9lyJ1RrfpNRVVu9sgD9QAZRJo8cXtUKE1wIgbdfCUdVgwKvGPDb-wwa8-lj4kGXtiTJHjTLnNwUniZg"
 
