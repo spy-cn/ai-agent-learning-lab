@@ -1,0 +1,9 @@
+LangChain 是一个用于开发大语言模型应用的开源框架。
+LangChain 由 Harrison Chase 于 2022 年 10 月发起。
+LangChain 的核心组件包括 Model I/O、Chains、Retrieval、Agents。
+LCEL 是 LangChain 表达式语言，用管道符组合组件。
+RAG 是检索增强生成，可以解决大模型知识滞后的问题。
+Agent 是能自主决策和调用工具的智能体。
+Milvus 是一个开源的向量数据库，适合存储和检索向量。
+Embedding 模型把文本转换为向量，用于相似度计算。
+文件中出现的人名是：小七；
